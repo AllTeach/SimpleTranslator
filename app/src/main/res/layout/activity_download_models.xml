@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvManageHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage on-device translation models"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allow cellular download:" 
+            android:layout_marginTop="12dp" />
+
+        <Switch
+            android:id="@+id/switchAllowCellular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Allow cellular" />
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#DDD" android:layout_marginTop="16dp"/>
+        <TextView android:id="@+id/tvEnglishLabel" android:layout_marginTop="12dp" android:text="English (en)" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"/>
+        <TextView android:id="@+id/tvEnglishStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Status: unknown" />
+        <ProgressBar android:id="@+id/progEnglish" style="?android:attr/progressBarStyleSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visibility="gone"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="8dp">
+            <Button android:id="@+id/btnDownloadEnglish" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Download"/>
+            <Button android:id="@+id/btnDeleteEnglish" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Delete" android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#DDD" android:layout_marginTop="16dp"/>
+        <TextView android:id="@+id/tvGreekLabel" android:layout_marginTop="12dp" android:text="Greek (el)" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"/>
+        <TextView android:id="@+id/tvGreekStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Status: unknown" />
+        <ProgressBar android:id="@+id/progGreek" style="?android:attr/progressBarStyleSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visibility="gone"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="8dp">
+            <Button android:id="@+id/btnDownloadGreek" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Download"/>
+            <Button android:id="@+id/btnDeleteGreek" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Delete" android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <TextView android:id="@+id/tvManageStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Tip: models are kept on-device and will be used automatically during translation."/>
+
+    </LinearLayout>
+</ScrollView>
