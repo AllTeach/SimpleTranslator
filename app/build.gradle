@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.translator"
-        minSdk 21
+        minSdk 30
         targetSdk 34
         versionCode 1
         versionName "1.0"
@@ -27,11 +27,14 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     // ML Kit Language ID
-    implementation 'com.google.mlkit:language-id:16.0.0'
+    implementation 'com.google.mlkit:language-id:17.0.6'
 
     // ML Kit On-device Translate
-    implementation 'com.google.mlkit:translate:16.1.3'
+    implementation 'com.google.mlkit:translate:17.0.3'
+    // Add ML Kit common (contains LibraryVersion)
+    implementation 'com.google.mlkit:common:18.11.0'
 
     // Play services tasks (used by ML Kit)
     implementation 'com.google.android.gms:play-services-tasks:18.1.0'
+    // Play services tasks (used by ML Kit)
 }
