@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Consolidated Theme.SimpleTranslator (single definition) -->
+    <style name="Theme.SimpleTranslator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary branding colors -->
+        <item name="colorPrimary">@color/md_blue_500</item>
+        <item name="colorPrimaryVariant">@color/md_purple_500</item>
+        <item name="colorOnPrimary">@color/btn_text</item>
+
+        <!-- Secondary / accent -->
+        <item name="colorSecondary">@color/colorSecondary</item>
+
+        <!-- Surface / background -->
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/onSurface</item>
+        <!-- convenience alias used elsewhere in your layouts -->
+        <!-- legacy/android attribute if referenced directly -->
+        <item name="android:colorBackground">@color/surface</item>
+
+        <!-- Use custom rounded MaterialButton style -->
+        <item name="materialButtonStyle">@style/Widget.MyApp.RoundedButton</item>
+    </style>
+
+    <!-- Single definition of rounded MaterialButton (merged attributes) -->
+    <style name="Widget.MyApp.RoundedButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+
+        <!-- padding merged from earlier file -->
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+
+        <item name="elevation">6dp</item>
+    </style>
+
+</resources>

@@ -1,4 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">SimpleTranslator</string>
+
+    <!-- UI / placeholders -->
+    <string name="status_idle">Idle</string>
+    <string name="recognized_placeholder">Recognized text will appear here</string>
+    <string name="translated_placeholder">Translated text will appear here</string>
+
+    <!-- Card labels / accessibility -->
+    <string name="cd_status">Conversation status</string>
+    <string name="label_recognized">Recognized</string>
+    <string name="label_translated">Translated</string>
+
+    <!-- Buttons -->
+    <string name="btn_speak_greek">Speak (Ελληνικά)</string>
+    <string name="btn_speak_english">Speak (English)</string>
+
+    <!-- Auto-play switch -->
+    <string name="auto_play_label">Auto-play translation</string>
+
+    <!-- Other strings used earlier (keep if referenced elsewhere) -->
+    <string name="btn_listen">Listen</string>
+    <string name="btn_translate">Translate</string>
+    <string name="btn_manage_models">Manage Models</string>
+    <string name="btn_speak">Speak</string>
+
+    <!-- Content descriptions -->
+    <string name="cd_listen">Listen for speech</string>
+    <string name="cd_translate">Translate text</string>
+    <string name="cd_manage_models">Manage translation models</string>
+    <string name="cd_speak">Speak translated text</string>
 </resources>
